@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct Sdata {
+	char name[50];
+	int id;
+	float marks;
+};
+int main()
+{
+	struct Sdata student;
+	printf("enter the information of student\n");
+	fflush(stdout);
+	printf("enter the name : ");
+	fflush(stdout);
+	gets(student.name);
+	printf("enter the id : ");
+	fflush(stdout);
+	scanf("%d",&student.id);
+	printf("enter the marks : ");
+	fflush(stdout);
+	scanf("%f",&student.marks);
+	printf("Display information\n");
+	printf("name : %s\n id : %d\n marks : %f",student.name,student.id,student.marks);
+}

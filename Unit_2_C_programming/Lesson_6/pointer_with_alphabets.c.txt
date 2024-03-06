@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+	char text[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+	char *ptr;
+	ptr=text;
+	printf("the alphabets are :\n ");
+	for (int i=0;i<26;i++,ptr++)
+	{
+		printf("%c\t",*ptr);
+	}
+}

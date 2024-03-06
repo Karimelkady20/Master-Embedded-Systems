@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int fact(int n)
+{
+	if (n==1||n==0)
+		return 1;
+	else
+		return n*fact(n-1);
+}
+int main()
+{
+	int x;
+	printf("enter the number to find factorial : ");
+	fflush(stdout);
+	scanf("%d",&x);
+	int z= fact(x);
+	printf("the factorial = %d",z);
+}

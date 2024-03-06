@@ -1,0 +1,33 @@
+#include <stdlib.h>
+#include <string.h>
+struct Scomplex {
+	float real;
+	float img;
+};
+struct Scomplex write_complex(char text[])
+{
+	struct Scomplex c;
+	printf("enter the complex number %s ",text);
+	fflush(stdout);
+	scanf("%f %f",&c.real,&c.img);
+	return c;
+}
+struct Scomplex add_complex(struct Scomplex a,struct Scomplex b)
+{
+	struct Scomplex c;
+	c.real=a.real+b.real;
+	c.img=a.img+b.img;
+	return c;
+}
+struct Scomplex print_complex(char text[] ,struct Scomplex c)
+{
+	printf("sum = %f +i %f ",c.real,c.img);
+}
+int main()
+{
+	struct Scomplex x,y,z;
+	x=write_complex("X");
+	y=write_complex("Y");
+	z=add_complex(x,y);
+	print_complex("Z",z);
+}

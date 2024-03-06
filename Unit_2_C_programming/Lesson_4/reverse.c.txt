@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void reverse(char text [],int n)
+{
+	printf("%c",text[n]);
+	n--;
+	if (n>=0)
+		reverse(text,n);
+}
+int main()
+{
+	char text[100];
+	int n;
+	printf("enter the string : ");
+	fflush(stdout);
+	gets(text);
+	n=strlen(text);
+	reverse(text,n);
+}

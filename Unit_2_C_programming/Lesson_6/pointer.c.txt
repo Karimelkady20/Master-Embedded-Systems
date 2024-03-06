@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+	int x=5;
+	int *ptr;
+	ptr=&x;
+	printf("%d %d\n",x,*ptr);
+	printf("%u %u\n",&x,ptr);
+	*ptr=34;
+	printf("%d %d\n",x,*ptr);
+	printf("%u %u\n",&x,ptr);
+	*ptr=7;
+	printf("%d %d\n",x,*ptr);
+	printf("%u %u",&x,ptr);
+}

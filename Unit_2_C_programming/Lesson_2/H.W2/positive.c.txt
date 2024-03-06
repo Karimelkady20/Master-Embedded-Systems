@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	float x;
+	printf("enter the number : ");
+	fflush(stdout);
+	scanf("%f",&x);
+	if (x>0)
+		printf("the number %f is positive",x);
+	else if (x<0)
+		printf("the number %f is negative",x);
+	else
+		printf("the number %f zero ",x);
+}

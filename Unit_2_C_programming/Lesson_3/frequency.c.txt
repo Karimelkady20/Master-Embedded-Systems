@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+	char text[100];
+	char alphabet;
+	int c=0;
+	printf("enter the string : ");
+	fflush(stdout);
+	gets(text);
+	printf("enter the alphabet to search ");
+	fflush(stdout);
+	scanf("%c",&alphabet);
+	for (int i=0;text[i]!=0;i++)
+	{
+		if (alphabet==text[i])
+			c++;
+	}
+	printf("the frequency of %c is %d",alphabet,c);
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct Sdata {
+	char name[50];
+	int id;
+};
+int main()
+{
+	struct Sdata Employee={"ALEX",1002};
+	struct Sdata* ptr;
+	ptr=&Employee;
+	printf("%s %d",ptr->name,ptr->id);
+}

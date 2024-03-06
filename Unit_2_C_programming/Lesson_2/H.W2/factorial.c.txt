@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int n,f=1;
+	printf("enter the number ");
+	fflush(stdout);
+	scanf("%d",&n);
+	for (int i=1;i<=n;i++)
+	{
+		if (n<0)
+		{
+			fflush(stdin);
+			printf("Error!!!");
+			fflush(stdout);
+			break;
+		}
+		else
+			f*=i;
+	}
+	printf("the sum of numbers is = %d",f);
+}

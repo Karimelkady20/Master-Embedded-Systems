@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int n;
+	printf("enter the number of data : ");
+	fflush(stdout);
+	scanf("%d",&n);
+	float a[n],avg;
+	for (int i=0;i<n;i++)
+	{
+		scanf("%f",&a[i]);
+	}
+	for (int i=0;i<n;i++)
+	{
+		avg+=a[i];
+	}
+	printf("the avg is = %f",(avg/n));
+}

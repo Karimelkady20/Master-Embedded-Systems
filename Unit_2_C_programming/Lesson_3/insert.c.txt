@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int n;
+	printf("enter the number of data ");
+	fflush(stdout);
+	scanf("%d",&n);
+	float a[n];
+	printf("the matrix\n");
+	fflush(stdout);
+	for (int i=0;i<n;i++)
+	{
+		scanf("%f",&a[i]);
+	}
+	for (int i=0;i<n;i++)
+	{
+		printf("%f\t",a[i]);
+	}
+	int insert_number;
+	int location;
+	printf("\nenter the number to insert\n");
+	fflush(stdout);
+	scanf("%d",&insert_number);
+	printf("enter the location\n");
+	fflush(stdout);
+	scanf("%d",&location);
+	for (int i=n;i>location;i--)
+	{
+		a[i]=a[i-1];
+	}
+	a[location]=insert_number;
+	for (int i=0;i<=n;i++)
+	{
+		printf("%f\t",a[i]);
+	}
+}

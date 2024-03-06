@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	char x;
+	printf("enter the alphabet : ");
+	fflush(stdout);
+	scanf("%c",&x);
+	if (x=='+'||x=='-'||x=='*'||x=='/')
+		printf("%c is not alphabet",x);
+	else
+		printf("%c is an alphabet",x);
+}

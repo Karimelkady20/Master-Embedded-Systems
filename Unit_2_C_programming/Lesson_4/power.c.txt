@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int power(int x,int y)
+{
+	if (y<0)
+		exit(0);
+	static int f=1; // to store it in data and avoid to return to 1 when you create a new stack
+	f*=x;
+	y--;
+	if (y>0)
+		power(x,y);
+	return f;
+}
+int main()
+{
+	int x,y;
+	printf("enter the base : ");
+	fflush(stdout);
+	scanf("%d",&x);
+	printf("enter the power : ");
+	fflush(stdout);
+	scanf("%d",&y);
+	int z=power(x,y);
+	printf("%d ^ %d = %d",x,y,z);
+}

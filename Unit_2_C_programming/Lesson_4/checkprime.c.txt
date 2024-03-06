@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int prime(int n)
+{
+	int check=0 ;
+	for (int i =2;i<n/2;i++)
+	{
+		if (n%i==0)
+		{
+			check=1;
+			break;
+		}
+	}
+	return check;
+}
+int main()
+{
+	int x,y,check=0;
+	printf("enter the intervals : ");
+	fflush(stdout);
+	scanf("%d %d",&x,&y);
+	printf("the prime numbers are :");
+	for (int i=x+1;i<=y;i++)
+	{
+		check=prime(i);
+		if (check==0)
+			printf("%d\t",i);
+	}
+}

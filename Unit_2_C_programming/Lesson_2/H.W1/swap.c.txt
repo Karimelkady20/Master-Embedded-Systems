@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int x,y,s=0;
+	printf("enter the x and y : ");
+	fflush(stdout);
+	scanf("%d %d",&x,&y);
+	printf("before swapping\n");
+	printf("x=%d , y=%d\n",x,y);
+	s=x;
+	x=y;
+	y=s;
+	printf("after swapping\n");
+	printf("x=%d , y=%d",x,y);
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int n;
+printf("enter the number : ");
+fflush(stdout);
+scanf("%d",&n);
+printf("%d",n);
+}
