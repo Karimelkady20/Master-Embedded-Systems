@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+void square_root(int n)
+{
+	if (n<0)
+		printf("Error!!");
+	else
+		printf("the square root is %.3lf",sqrt(n));
+}
+int main()
+{
+	int n;
+	printf("enter the number : ");
+	fflush(stdout);
+	scanf("%d",&n);
+	square_root(n);
+}

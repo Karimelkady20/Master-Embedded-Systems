@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int sum(int x,int y)
+{
+	static int s=0;
+	s+=x;
+	x++;
+	if (x<=y)
+		sum(x,y);
+	return s;
+}
+int main()
+{
+	int x,y;
+	printf("enter the two numbers ");
+	fflush(stdout);
+	scanf("%d %d",&x,&y);
+	int z=sum(x,y);
+	printf("%d",z);
+}

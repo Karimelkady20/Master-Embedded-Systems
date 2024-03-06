@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void number_of_ones(int n)
+{
+	int c=0;
+	while (n!=0)
+	{
+		n=n&(n-1);
+		c++;
+	}
+	printf("the number of ones is %d ",c);
+}
+int main()
+{
+	int n;
+	printf("enter the number : ");
+	fflush(stdout);
+	scanf("%d",&n);
+	number_of_ones(n);
+}

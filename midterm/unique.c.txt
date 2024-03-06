@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void find_unique(int a[],int n)
+{
+	int k=0;
+	for (int i=0;i<n;i++)
+	{
+		k^=a[i];
+	}
+	printf("the unique number is %d",k);
+}
+int main()
+{
+	int n;
+	printf("enter the number of data ");
+	fflush(stdout);
+	scanf("%d",&n);
+	int a[n];
+	for (int i=0;i<n;i++)
+	{
+		printf("enter a[%d]",i+1);
+		fflush(stdout);
+		scanf("%d",&a[i]);
+	}
+	find_unique(a,n);
+
+}

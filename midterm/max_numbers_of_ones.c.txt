@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void max_ones(int n)
+{
+	int c=0;
+	while (n!=0)
+	{
+		n=n&(n<<1);
+		c++;
+	}
+	printf("the max ones are %d ",c);
+}
+int main()
+{
+	int n;
+	printf("enter the number : ");
+	fflush(stdout);
+	scanf("%d",&n);
+	max_ones(n);
+}
